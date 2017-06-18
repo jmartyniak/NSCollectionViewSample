@@ -696,7 +696,10 @@
                                         <collectionView ambiguous="YES" id="FSb-fP-Rtl">
                                             <rect key="frame" x="0.0" y="0.0" width="438" height="228"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <collectionViewGridLayout key="collectionViewLayout" id="3US-h5-G4Q"/>
+                                            <collectionViewGridLayout key="collectionViewLayout" maximumNumberOfColumns="1" id="uRO-ff-6oY">
+                                                <size key="minimumItemSize" width="250" height="150"/>
+                                                <size key="maximumItemSize" width="250" height="150"/>
+                                            </collectionViewGridLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
                                                 <outlet property="dataSource" destination="XfG-lQ-9wD" id="JZJ-zQ-L6N"/>
