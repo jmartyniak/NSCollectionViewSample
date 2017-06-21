@@ -688,7 +688,7 @@
                         <subviews>
                             <scrollView wantsLayer="YES" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9n-lU-vsY">
                                 <rect key="frame" x="20" y="20" width="440" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="0p3-1o-N1S">
                                     <rect key="frame" x="1" y="1" width="438" height="228"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -696,13 +696,13 @@
                                         <collectionView ambiguous="YES" id="FSb-fP-Rtl">
                                             <rect key="frame" x="0.0" y="0.0" width="438" height="228"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <collectionViewGridLayout key="collectionViewLayout" maximumNumberOfColumns="1" id="uRO-ff-6oY">
-                                                <size key="minimumItemSize" width="250" height="150"/>
-                                                <size key="maximumItemSize" width="250" height="150"/>
-                                            </collectionViewGridLayout>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="MkS-iX-yZC">
+                                                <size key="itemSize" width="438" height="228"/>
+                                            </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
                                                 <outlet property="dataSource" destination="XfG-lQ-9wD" id="JZJ-zQ-L6N"/>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="gbL-fS-Gkh"/>
                                             </connections>
                                         </collectionView>
                                     </subviews>

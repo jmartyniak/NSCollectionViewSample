@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="ItemOne">
+        <customObject id="-2" userLabel="File's Owner">
             <connections>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
@@ -18,9 +18,9 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MD0-lf-yOr">
-                    <rect key="frame" x="18" y="113" width="37" height="17"/>
+                    <rect key="frame" x="18" y="113" width="41" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="UV5-M2-lI0">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Item 1" id="UV5-M2-lI0">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -30,6 +30,7 @@
         </customView>
         <collectionViewItem id="7v3-Gz-lVD" customClass="ItemOne">
             <connections>
+                <outlet property="sourceItemView" destination="Hz6-mo-xeY" id="gPM-uD-NDv"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="aeG-x5-LA8"/>
             </connections>
         </collectionViewItem>

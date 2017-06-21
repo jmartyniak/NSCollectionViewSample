@@ -5,6 +5,7 @@
 //  Created by John Martyniak on 6/18/17.
 //  Copyright © 2017 ABC. All rights reserved.
 //
+// https://gist.github.com/benstockdesign/a23d817e03f2ece89476f45ef133b74c
 
 #import "ViewController.h"
 
@@ -41,6 +42,11 @@
 }
 
 #pragma mark - NSCollectionViewDatasource -
+
+- (NSInteger)numberOfSectionsInCollectionView:(NSCollectionView *)collectionView {
+    return 1;
+}
+
 - (NSInteger)collectionView:(NSCollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section {
     
@@ -57,6 +63,8 @@
     NSLog(@"Identifier: %@", [cellArray objectAtIndex:[indexPath item]]);
     
     NSCollectionViewItem *theItem = [collectionView makeItemWithIdentifier:[cellArray objectAtIndex:[indexPath item]] forIndexPath:indexPath];
+    
+    theItem.representedObject = [cellArray objectAtIndex:[indexPath item]];
     
     return theItem;
 }
