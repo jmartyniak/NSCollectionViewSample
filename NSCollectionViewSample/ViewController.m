@@ -3,7 +3,6 @@
 //  NSCollectionViewSample
 //
 //  Created by John Martyniak on 6/18/17.
-//  Copyright © 2017 ABC. All rights reserved.
 //
 // https://gist.github.com/benstockdesign/a23d817e03f2ece89476f45ef133b74c
 

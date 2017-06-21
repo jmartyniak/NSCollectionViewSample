@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4326C71C1EFA54AF0027B5D3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		43BE87DD1EF6D12700A9B41B /* NSCollectionViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCollectionViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BE87E01EF6D12700A9B41B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		43BE87E11EF6D12700A9B41B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		43BE87D41EF6D12700A9B41B = {
 			isa = PBXGroup;
 			children = (
+				4326C71C1EFA54AF0027B5D3 /* README.md */,
 				43BE87DF1EF6D12700A9B41B /* NSCollectionViewSample */,
 				43BE87F61EF6D12800A9B41B /* NSCollectionViewSampleTests */,
 				43BE88011EF6D12800A9B41B /* NSCollectionViewSampleUITests */,
