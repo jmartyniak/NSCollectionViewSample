@@ -69,6 +69,31 @@
 }
 
 #pragma mark - NSCollectionViewDelegate -
+- (NSSize)collectionView:(NSCollectionView *)collectionView
+                  layout:(NSCollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%@", indexPath);
+    
+    NSSize size = NSMakeSize(438, 150);
+    NSInteger width = 0;
+    NSInteger height = 0;
+    NSString *label = [cellArray objectAtIndex:[indexPath item]];
+    
+    NSRect collectionFrame = [collectionView frame];
+    
+    width = collectionFrame.size.width;
+    if ([label isEqualToString:@"Item1"]) {
+        height = 114;
+    } else if ([label isEqualToString:@"Item2"]) {
+        height = 84;
+    }
+    
+    size = NSMakeSize(width, height);
+    
+    return size;
+    
+    
+}
 
 
 @end
