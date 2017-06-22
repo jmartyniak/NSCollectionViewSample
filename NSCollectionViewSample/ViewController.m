@@ -4,7 +4,6 @@
 //
 //  Created by John Martyniak on 6/18/17.
 //
-// https://gist.github.com/benstockdesign/a23d817e03f2ece89476f45ef133b74c
 
 #import "ViewController.h"
 
@@ -27,8 +26,17 @@
     
     // Do any additional setup after loading the view.
     
-    [collectionView registerClass:ItemOne.class forItemWithIdentifier:@"Item1"];
-    [collectionView registerClass:ItemTwo.class forItemWithIdentifier:@"Item2"];
+    // I believe that this way can be used if you want to register the class
+//    [collectionView registerClass:ItemOne.class forItemWithIdentifier:@"Item1"];
+//    [collectionView registerClass:ItemTwo.class forItemWithIdentifier:@"Item2"];
+    
+    
+    // If you would like to load it with a NIB then use these lines and comment out the register class stuff above.
+    NSNib *itemOneNib = [[NSNib alloc] initWithNibNamed:@"ItemOne" bundle:nil];
+    NSNib *itemTwoNib = [[NSNib alloc] initWithNibNamed:@"ItemTwo" bundle:nil];
+    
+    [collectionView registerNib:itemOneNib forItemWithIdentifier:@"Item1"];
+    [collectionView registerNib:itemTwoNib forItemWithIdentifier:@"Item2"];
     
     cellArray = [@[@"Item1", @"Item2", @"Item1", @"Item2", @"Item1"] mutableCopy];
 }
@@ -82,6 +90,8 @@
     NSRect collectionFrame = [collectionView frame];
     
     width = collectionFrame.size.width;
+    
+    // TODO: This needs to be based on the actual value of the view instead of hardcoding a number in.
     if ([label isEqualToString:@"Item1"]) {
         height = 114;
     } else if ([label isEqualToString:@"Item2"]) {
